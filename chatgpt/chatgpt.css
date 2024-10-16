@@ -1,0 +1,122 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh; /* Garante que o fundo ocupe 100% da altura da viewport */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(133, 133, 233, 0.8), rgba(74, 74, 231, 0.8), rgba(29, 29, 223, 0.8));
+    background-repeat: no-repeat;
+    background-size: cover; /* Garante que o fundo cubra toda a tela */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; /* Cor do texto branca para bom contraste */
+    display: flex;
+    flex-direction: column; /* Flexbox para layout */
+    justify-content: space-between; /* Garante que o conteúdo fique bem distribuído na tela */
+  }
+  
+  
+  header {
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem; /* Tamanho maior para destaque */
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+  }
+  
+  ul li a {
+    color: white; /* Cor do texto branco */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: lightblue; /* Efeito hover no menu */
+  }
+  
+  .segundo-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0; /* Espaçamento superior e inferior */
+  }
+  
+  button {
+    border-radius: 25px;
+    border: none;
+    width: 15vw;
+    height: 4vh;
+    background: linear-gradient(100deg, rgb(209, 203, 118), rgb(145, 139, 61));
+    color: white; /* Cor do texto no botão */
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(100deg, rgb(240, 230, 180), rgb(180, 160, 80)); /* Efeito hover nos botões */
+  }
+  
+  .first-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Duas colunas: uma maior para o vídeo e uma menor para o texto lateral */
+    grid-template-rows: auto auto; /* Duas linhas: uma para o título e outra para o conteúdo (vídeo e texto) */
+    padding: 10px;
+    gap: 20px; /* Espaçamento entre os elementos */
+  }
+  
+  .titulo1 {
+    grid-column: 1 / 3; /* O título ocupa ambas as colunas */
+    grid-row: 1 / 2; /* Fica na primeira linha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .texto-lateral {
+    grid-column: 2 / 3; /* O texto lateral ocupa a segunda coluna */
+    grid-row: 2 / 3; /* Fica na segunda linha */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px;
+  }
+  
+  #video {
+    grid-column: 1 / 2; /* O vídeo ocupa a primeira coluna */
+    grid-row: 2 / 3; /* Fica na segunda linha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  iframe {
+    border-radius: 10px; /* Canto arredondado no vídeo */
+  }
+  
+  
+  /* Melhorias no rodapé */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  
