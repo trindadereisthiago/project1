@@ -1,3 +1,33 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+    color: white;
+}
+
+.cabecalho {
+    background-color: lightblue;
+    width: 100vw;
+    padding: 10px;
+}
+
+.menu {
+    padding: 10px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 15px;
+    color: lightblue;
+}
+
+.topicos, option {
+    color: rgb(44, 131, 160);
+    border-color: lightblue;
+}
+
+a {
+    color: rgb(44, 132, 161);
+    text-decoration: none;
 }
