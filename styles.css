@@ -55,6 +55,16 @@ option {
     border-color: lightblue;
 }
 
+.bolo {
+    list-style: circle; /* Define o estilo do marcador como círculo */
+    padding-left: 20px; /* Adiciona espaço à esquerda para o marcador */
+}
+
+.bolo li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+
 
 a {
     color: rgb(44, 132, 161);
@@ -114,9 +124,6 @@ blockquote {
     color: blue;
 }
 
-.bolo {
-    list-style: circle;
-}
 
 @media (max-width: 768px) {
     .cabecalho {
