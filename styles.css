@@ -41,7 +41,6 @@ body {
 ul li {
     display: inline;
     margin-right: 15px;
-    color: lightblue;
 }
 
 /* .topicos, option {
@@ -113,4 +112,33 @@ blockquote {
     border-radius: 10px;
     text-align: justify;
     color: blue;
+}
+
+.bolo {
+    list-style: circle;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introducao, .principal, .consideracoes {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .algoritmo, .codigo, .curiosidade {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
