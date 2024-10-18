@@ -26,19 +26,18 @@
                 <li><a href="#consideracoes">Quem somos</a></li>
                 <li></li>
                 <li>
-                    <select class="topicos" name="opcoes" id="opcoes">
-                        <option value="Tópicos">Selecione</option>
-                        <option value="introducao">Introdução</option>
-                        <option value="#video">Vídeo</option>
-                        <option value="lógica">Lógica</option>
-                        <option value="linguagemC">Linguagem C</option>
-                    </select>
+                    <select class="topicos" name="opcoes" id="opcoes" onchange="location = this.value;">
+                        <option value="#">Selecione</option>
+                        <option value="#introducao">Introdução</option>
+                        <option value="#logica">Lógica</option>
+                        <option value="#linguagemC">Linguagem C</option>
+                    </select>                    
                 </li>
             </ul>
         </nav>
         <hr>
     </blockquote>
-    <section class="introducao">
+    <section id="introducao" class="introducao">
         <div class="video">
             <h2>Assista ao vídeo</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FF1wTboPbkc?si=xmqoQLr2J9qqhOUZ"
