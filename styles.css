@@ -6,7 +6,7 @@
     color: white;
 }
 
-.cabecalho {
+.cabecalho, .introducao {
     background-color: lightblue;
     width: 100vw;
     padding: 10px;
@@ -30,4 +30,9 @@ ul li {
 a {
     color: rgb(44, 132, 161);
     text-decoration: none;
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
