@@ -73,7 +73,7 @@ a {
 
 .introducao, .principal, .consideracoes {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     justify-content: space-around;
     gap: 10px;
 }
