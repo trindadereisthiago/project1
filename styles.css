@@ -36,6 +36,8 @@ body {
 
 .menu {
     padding: 10px;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .menu ul {
@@ -45,7 +47,7 @@ body {
 
 .menu ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .menu ul li a:hover {
