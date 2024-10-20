@@ -87,7 +87,7 @@ a {
     text-align: justify;
     } */
 
-.algoritmo, .codigo {
+.algoritmo {
     margin-left: 30px;
     padding: 30px;
     max-width: 40rem;
@@ -96,6 +96,7 @@ a {
     border-radius: 10px;
     text-align: justify;
 }
+
 
 strong {
     color: blue;
