@@ -172,7 +172,81 @@ footer {
 
 
 
-@media (max-width: 768px) {
+/* Estilos gerais para desktops e telas grandes */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        gap: 25px;
+        justify-content: space-between;
+    }
+
+    .introducao, .principal, .consideracoes {
+        grid-template-columns: 1fr 1fr; /* Exibe duas colunas */
+    }
+}
+
+/* Tablets e telas entre 769px e 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .introducao, .principal, .consideracoes {
+        grid-template-columns: 1fr; /* Exibe apenas uma coluna */
+    }
+
+    .algoritmo, .bibliotecas, .variaveis {
+        margin-left: 0;
+        max-width: 90%;
+    }
+}
+
+/* Smartphones com largura entre 480px e 768px */
+@media (max-width: 768px) and (min-width: 481px) {
+    body {
+        font-size: 15px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introducao, .principal, .consideracoes {
+        grid-template-columns: 1fr; /* Exibe apenas uma coluna */
+    }
+
+    .algoritmo, .bibliotecas, .variaveis {
+        margin-left: 0;
+        max-width: 95%;
+    }
+    
+    ul li {
+        display: block; /* Itens da lista exibidos como bloco */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Dispositivos pequenos, como smartphones abaixo de 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
     .cabecalho {
         flex-direction: column;
         gap: 10px;
@@ -181,21 +255,30 @@ footer {
     }
 
     .introducao, .principal, .consideracoes {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Exibe apenas uma coluna */
         padding: 10px;
     }
 
-    .algoritmo, .codigo, .curiosidade {
+    .algoritmo, .bibliotecas, .variaveis {
         margin-left: 0;
         max-width: 100%;
     }
 
     ul li {
-        display: block; /* Itens da lista exibidos como bloco no mobile */
+        display: block;
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
 }
+
 
 footer ul li {
     display: inline;
