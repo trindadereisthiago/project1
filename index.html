@@ -23,10 +23,13 @@
         <nav class="menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#consideracoes">Quem somos</a></li>
+                <li><a href="#quemsomos">Quem somos</a></li>
                 <li><a href="#introducao">Introdução</a></li>
                 <li><a href="#compras">Algoritmo</a></li>
                 <li><a href="#linguagemC">Linguagem C</a></li>
+                <li><a href="#variaveis">Variáveis</a></li>
+                <li><a href="#entradasaida">Entrada & saída</a></li>
+                <li><a href="#condicionais">Condicionais & Estruturas de repetição</a></li>
             </ul>
         </nav>
         <hr>
@@ -59,32 +62,35 @@
     <blockquote>
     </blockquote>
     <main class="principal">
-        <div class="compras algoritmo">
+        <div class="algoritmo" id="compras">
             <h2>Algoritmos</h2>
-            <p>Vamos fazer um algoritmo simples.
-                Precisamos fazer um bolo. Para isso é preciso verificar se tem os ingredientes para isso.
-            </p>
-            <code>
-                <strong>
-                Algoritmo de compras <br>
-                <br>
-                inicio
-                <br>
-                Abrir a geladeira; <br>
-                Se há ovos <br>
-                    não fazer nada; <br>
-                senao <br>
-                    pegar a carteira; <br>
-                    ir ao mercado; <br>
-                    comprar ovos; <br>
-                    voltar para casa; <br>
-                fimse <br>
-                <br>
-                fim algoritmo; <br>
-                </strong>
-            </code>
+            <strong>
+                <p>Vamos fazer um algoritmo simples.
+                    Precisamos fazer um bolo. Para isso é preciso verificar se tem os ingredientes para isso.
+                </p>
+            </strong>
+            <h3>Algoritmo de compras</h3>
+            <strong>
+                <ul>
+                    <li>inicio</li>
+                    <li>Abrir a geladeira</li>
+                    <li>Se há ovos</li>
+                    <li>não fazer nada</li>
+                    <li>senao</li>
+                    <li>pegar a carteira</li>
+                    <li>ir ao mercado</li>
+                    <li>comprar ovos</li>
+                    <li>voltar para casa</li>
+                    <li>fimse</li>
+                    <li>fim algoritmo</li>
+                </ul>
+            </strong>
         </div>
         <div class="curiosidade">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ohi-MGlBEws?si=eH33cTBS197B7DKj"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <h2>Vale a pena saber que...</h2>
             <p>As receitas de culinária são excelentes exemplos de algoritmos na prática. Ao seguir uma receita, estamos
                 executando um algoritmo para criar um prato específico. Vamos analisar como uma receita de bolo se
@@ -96,7 +102,7 @@
                 <li>Analogia entre os passos de uma receita e um algoritmo computacional</li>
             </ul>
         </div>
-        <div class="curiosidade">
+        <div class="curiosidade" id="linguagemC">
             <h2>Linguagem C</h2>
             <p></p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6mUCcsnCn08?si=wqTwsjju-4_e7HLq"
@@ -127,7 +133,7 @@
             </div>
             </p>
         </div>
-        <div class="variaveis">
+        <div class="variaveis" id="variaveis">
             <h2>Variáveis</h2>
             <strong>
                 <p>
@@ -150,17 +156,103 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>Boas práticas</h2>
+            <p>
+                Seguir boas práticas na declaração de variáveis em C (ou em qualquer linguagem de programação) é
+                fundamental para garantir que o código seja legível, manutenível e livre de erros. Aqui estão algumas
+                boas práticas a serem consideradas:
+            </p>
+            <ul>
+                <li>Use nomes de variáveis que descrevam claramente seu propósito. Evite abreviações excessivas.</li>
+                <li>Escolha o tipo de variável que melhor se adapta aos dados que você precisa armazenar. Use int para
+                    números inteiros, float ou double para números com ponto flutuante, char para caracteres, etc.</li>
+                <li>Sempre inicialize suas variáveis antes de usá-las. Variáveis não inicializadas podem conter valores
+                    indesejados.</li>
+                <li>Adicione comentários explicativos, especialmente se a variável não for autoexplicativa.</li>
+            </ul>
+        </div>
+        <div class="curiosidade" id="entradasaida">
+            <h2>Entrada e saída de dados</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ka4dnwd5vJk?si=1E8YxJzMNtanHLhy"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <h2>Vale a pena saber que...</h2>
+            <p>
+                Quando você utiliza scanf para ler dados do teclado, o que realmente acontece é que o programa lê os
+                dados de um "buffer" de entrada. Isso significa que, quando você digita algo e pressiona "Enter", o que
+                você digitou é armazenado temporariamente na memória até que scanf seja chamado para processá-lo. <br>
+                A função scanf ignora automaticamente os espaços em branco (como espaços, tabulações e quebras de linha)
+                antes de ler os dados. Isso significa que, ao ler um número, você pode inserir espaços antes ou depois
+                do número, e scanf ainda irá capturá-lo corretamente.
+            </p>
+        </div>
+        <div class="bibliotecas">
+            <img src="imagens/novaFotoC.png" alt="">
+            <h2>Atenção a explicação</h2>
+            <strong>
+                <ul>
+                    <li>printf é usado para mostrar uma mensagem ao usuário, solicitando que ele insira um valor.
+                    </li>
+                    <li>scanf é usado para ler a entrada do usuário. Você deve passar o endereço da variável onde deseja
+                        armazenar o valor (usando o operador &).</li>
+                    <li>
+                        Após a entrada, printf é usado novamente para mostrar os valores que o usuário digitou.
+                    </li>
+                </ul>
+            </strong>
+        </div>
+        <div class="bibliotecas listaDescritiva" id="condicionais">
+            <h2>Condicionais</h2>
+            <p>As condicionais em C permitem que você execute diferentes blocos de código com base em condições
+                específicas. As principais estruturas condicionais em C são if, else if, e else. Além disso, o switch é
+                outra forma de implementar a lógica condicional. Vamos explorar cada uma delas.</p>
+            <dl>
+                <dt>Estrutura "if"</dt>
+                <dd>A estrutura básica do if é usada para testar uma condição. Se a condição for verdadeira, o bloco de
+                    código dentro do if será executado.</dd>
+                <dt>Estrutura "else"</dt>
+                <dd>Você pode adicionar um bloco else que será executado se a condição do if for falsa.</dd>
+                <dt>Estrutura "else if"</dt>
+                <dd>Para testar múltiplas condições, você pode usar else if.</dd>
+            </dl>
+        </div>
+        <div class="curiosidade">
+            <h2>Estrutura de repetição</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RlgdACEgA8c?si=Ayx6GetfnnKbUhHo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
     <blockquote>
     </blockquote>
     <footer class="consideracoes" id="consideracoes">
-        <ul>
-            <li>Marceu Lago</li>
-            <li>Fábricio</li>
-            <li>Cleberson</li>
-            <li>Novato</li>
-        </ul>
+        <blockquote>
+            <h2 style="color: blue;">Ligando os ponto</h2>
+            <p>
+                A lógica de programação é fundamental para resolver problemas de forma estruturada, ajudando a
+                desenvolver o raciocínio necessário para criar programas eficientes. <br> Algoritmos são passos bem
+                definidos para alcançar soluções, sendo essenciais para otimizar processos e criar programas eficazes.
+                <br> A linguagem C, por sua vez, é uma das bases da programação moderna, conhecida por sua eficiência e
+                controle de baixo nível, sendo amplamente utilizada em sistemas operacionais e hardware.
+            </p>
+        </blockquote>
+        <blockquote class="quemsomos" id="quemsomos">
+            <ul>
+                <li><a href="https://www.instagram.com/marceu.schmidt/profilecard/?igsh=MW90d2tidDh3cnpmdw==">Marceu
+                        Lago</a></li>
+                <li><a href="https://www.instagram.com/alyson.gif/profilecard/?igsh=ZTQyc2h4Ymt3M20w">Alyson de
+                        Oliveira</a></li>
+                <li><a href="https://www.instagram.com/thiagoo_rheis/profilecard/?igsh=bWVmc2J3MTh6dTBq">Thiago Reis</a>
+                </li>
+                <li><a href="">Cleberson</a></li>
+                <li><a href="">Diego</a></li>
+                <li><a href="">Fabricio</a></li>
+                <li><a href="">Jeliel</a></li>
+            </ul>
+        </blockquote>
     </footer>
 </body>
 

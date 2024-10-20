@@ -5,8 +5,16 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     color: white;
+    min-height: 100vh; /* Garante que o body ocupe a tela toda */
 }
 
 .cabecalho,
@@ -40,7 +48,23 @@ body {
     margin-right: 15px;
 }
 
-.introducao, .principal, .consideracoes {
+.menu ul li a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+a {
+    color: rgb(44, 132, 161); /* Cor inicial dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: darkblue; /* Altera a cor dos links no hover */
+}
+
+
+.introducao, .principal {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
@@ -62,15 +86,31 @@ strong {
 
 p {
     padding: 10px;
+    margin-bottom: 15px; /* Espaçamento adicional entre os parágrafos */
 }
+
 
 h2 {
     padding-bottom: 5px;
+    font-weight: bold;
+    color: #fdfeff; /* Um tom de azul mais escuro */
 }
+
 
 blockquote {
     padding: 20px;
+    border-left: 4px solid blue; /* Adiciona uma borda à esquerda */
+    background-color: rgba(240, 240, 240, 0.5); /* Fundo leve */
+    margin: 15px 0;
+    text-align: justify;
+    color: blue;
+    font-size: 1.3rem;
 }
+
+.quemsomos {
+    text-align: center;
+}
+
 
 .curiosidade, .standardLibrary {
     margin-left: 30px;
@@ -100,6 +140,37 @@ a {
     color: rgb(44, 132, 161);
     text-decoration: none;
 }
+
+dl {
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    background-color: rgba(8, 126, 134, 0.8); /* Fundo leve para destacar */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+dt {
+    font-weight: bold; /* Destaca os termos */
+    margin-top: 15px; /* Espaçamento superior para os termos */
+}
+
+dd {
+    margin-left: 20px; /* Indenta as descrições */
+    margin-bottom: 10px; /* Espaçamento inferior para as descrições */
+    padding-left: 10px; /* Espaço interno à esquerda para a descrição */
+    border-left: 3px solid blue; /* Borda à esquerda para as descrições */
+}
+
+footer {
+    display: block;
+    width: 100%; /* Ocupa 100% da largura */
+    margin: 0; /* Remove margens */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #007BFF; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+
 
 @media (max-width: 768px) {
     .cabecalho {
